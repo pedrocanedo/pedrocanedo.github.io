@@ -1,180 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bankai | Clareza para decisões empresariais</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedro Canedo</title>
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --button-bg: #f9fafb;
+      --button-hover: #f3f4f6;
+    }
 
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
-            background-color: #ffffff;
-            color: #212529;
-        }
-        h1, h2 {
-            font-weight: 600;
-        }
-        .section {
-            padding: 48px 16px;
-        }
-        .hero {
-            background-color: #0d1117;
-            color: #ffffff;
-        }
-        .divider {
-            width: 48px;
-            height: 4px;
-            background-color: #0d6efd;
-            margin: 16px 0 24px;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 12px;
-        }
-        .cta-btn {
-            width: 100%;
-            padding: 14px;
-            font-size: 18px;
-        }
-        @media (min-width: 768px) {
-            body {
-                font-size: 19px;
-            }
-            .section {
-                padding: 72px 0;
-            }
-        }
-    </style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 24px 20px 40px;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .link-button {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin-bottom: 12px;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--button-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .link-button:active {
+      background: var(--button-hover);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 1.9rem; }
+      .link-button { font-size: 1.05rem; }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<!-- HERO -->
-<section class="hero section">
-    <div class="container">
-        <h1>Clareza para decisões empresariais</h1>
-        <p class="mt-3">
-            A Bankai ajuda donos de pequenas empresas a desenvolver inteligência analítica
-            para tomar decisões com mais consciência e menos improviso.
-        </p>
+    <header>
+      <h1>Inteligência Analítica</h1>
+      <p class="subtitle">Clareza analítica para donos de pequenas empresas</p>
+    </header>
+
+    <div class="section">
+      <div class="section-title">Comece por aqui</div>
+
+      <a class="link-button" href="bankai/homepage.html">
+        Diagnóstico de Clareza Analítica
+      </a>
+
+      <a class="link-button" href="bankai/diagnostico.html">
+        Agendar conversa inicial
+      </a>
     </div>
-</section>
 
-<!-- PROBLEMA -->
-<section class="section">
-    <div class="container">
-        <h2>O problema não é esforço</h2>
-        <div class="divider"></div>
-        <p>
-            Pequenos empresários trabalham muito.
-            Ainda assim, decisões importantes são tomadas sob pressão,
-            com informações espalhadas e pouco tempo para pensar.
-        </p>
-        <p>
-            Quando não há clareza, o negócio vira reação.
-        </p>
+    <!-- <div class="section">
+      <div class="section-title">Conteúdos</div>
+
+      <a class="link-button" href="#">
+        Artigos sobre gestão e clareza analítica
+      </a>
+
+      <a class="link-button" href="#">
+        Vídeos curtos para donos de pequenas empresas
+      </a>
+
+      <a class="link-button" href="#">
+        Manifesto: por que pequenas empresas decidem no escuro
+      </a>
+    </div> -->
+
+    <!-- <div class="section">
+      <div class="section-title">Sobre</div>
+
+      <a class="link-button" href="#">
+        Quem está por trás do Comando Analytics
+      </a>
+
+      <a class="link-button" href="#">
+        Como trabalho (método e princípios)
+      </a>
+    </div> -->
+
+    <div class="section">
+      <div class="section-title">Contato</div>
+
+      <a class="link-button" href = "mailto:devcanedo@gmail.com">
+        <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" target="_blank">
+      </a>
+
+      <a class="link-button" href="https://www.linkedin.com/in/canedopedro/" target="_blank">
+        <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"  target="_blank">
+      </a> 
     </div>
-</section>
 
-<!-- INTELIGÊNCIA ANALÍTICA -->
-<section class="section bg-light">
-    <div class="container">
-        <h2>O que é inteligência analítica</h2>
-        <div class="divider"></div>
-        <p>
-            Não é software caro.
-            Não é planilha complexa.
-        </p>
-        <ul>
-            <li>Entender o que está acontecendo no negócio</li>
-            <li>Identificar gargalos importantes</li>
-            <li>Tomar decisões com mais segurança</li>
-            <li>Usar dados simples a favor do negócio</li>
-        </ul>
-        <p>
-            Antes da tecnologia, vem a clareza.
-        </p>
-    </div>
-</section>
+    <footer>
+      <p>Pequenas empresas não quebram por falta de esforço. Quebram por falta de clareza.</p>
+    </footer>
 
-<!-- FOCO NO DONO -->
-<section class="section">
-    <div class="container">
-        <h2>Por que começar pelo dono</h2>
-        <div class="divider"></div>
-        <p>
-            Em pequenas empresas, o dono decide quase tudo.
-        </p>
-        <p>
-            Se não há clareza na decisão:
-        </p>
-        <ul>
-            <li>os dados não ajudam</li>
-            <li>a tecnologia vira custo</li>
-            <li>o problema se repete</li>
-        </ul>
-        <p>
-            A Bankai começa organizando o pensamento de quem decide.
-        </p>
-    </div>
-</section>
-
-<!-- COMO ATUAMOS -->
-<section class="section bg-light">
-    <div class="container">
-        <h2>Como funciona</h2>
-        <div class="divider"></div>
-        <ol>
-            <li>Uma conversa estruturada</li>
-            <li>Identificação do principal gargalo</li>
-            <li>Definição dos dados mínimos a acompanhar</li>
-            <li>Uma ação clara para os próximos dias</li>
-        </ol>
-        <p>
-            Simples, direto e aplicável.
-        </p>
-    </div>
-</section>
-
-<!-- SOBRE -->
-<section class="section">
-    <div class="container">
-        <h2>Quem está por trás</h2>
-        <div class="divider"></div>
-        <p>
-            Meu nome é <strong>[SEU NOME]</strong>.
-            Trabalho há anos com planejamento e análise em contextos reais de empresa.
-        </p>
-        <p>
-            Criei a Bankai para ajudar empresários a tomarem decisões
-            com mais consciência e menos desgaste.
-        </p>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="section bg-dark text-light">
-    <div class="container">
-        <h2>O primeiro passo não é tecnologia</h2>
-        <p>
-            É clareza.
-        </p>
-        <a href="#" class="btn btn-outline-light cta-btn mt-3">
-            Conhecer o Diagnóstico de Clareza Analítica
-        </a>
-    </div>
-</section>
-
-<footer class="py-3 text-center text-muted">
-    <small>© Bankai</small>
-</footer>
-
+  </div>
 </body>
 </html>
